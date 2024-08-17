@@ -11,7 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: ${{ github.ref_name }}
+          ref: ${{ vars.GITHUB_REF }}
       - name: Install Vercel CLI
         run: npm install --global vercel@latest
       - name: Pull Vercel Environment Information
