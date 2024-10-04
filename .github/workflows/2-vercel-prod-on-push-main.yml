@@ -1,4 +1,4 @@
-name: anna-test Vercel Production Deployment on push VERCEL_PROJECT_ID
+name: anna-test Vercel Production Deployment on push VERCEL_PROJECT_ID_2
 env:
   VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
   VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID_2 }}
