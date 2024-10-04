@@ -1,17 +1,16 @@
-name: Vercel Production Deployment
+name: anna-test Vercel Production Deployment on push VERCEL_PROJECT_ID
 env:
   VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
-  VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+  VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID_2 }}
 on:
-  release:
-    types: [published]
+  push:
+    branches:
+      - main
 jobs:
   Deploy-Production:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-        with:
-          ref: main
       - name: Install Vercel CLI
         run: npm install --global vercel@latest
       - name: Pull Vercel Environment Information
