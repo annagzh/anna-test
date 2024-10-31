@@ -1,9 +1,10 @@
 #!/bin/bash
 
 # Fetch all tags and unshallow the repository
-git fetch --prune --unshallow
+#git fetch --prune --unshallow
 
-git fetch -t 
+#git fetch -t
+git clone
 
 # Get the most recent git tag and assign it to APP_VERSION
 export APP_VERSION=$(git describe --tags)
