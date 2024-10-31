@@ -4,7 +4,7 @@
 #git fetch --prune --unshallow
 
 #git fetch -t test
-git clone
+git clone https://github.com/annagzh/anna-test
 
 # Get the most recent git tag and assign it to APP_VERSION
 export APP_VERSION=$(git describe --tags)
