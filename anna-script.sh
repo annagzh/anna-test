@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Fetch all tags and unshallow the repository
+# Fetch all tags and unshallow the repository test
 git fetch --unshallow
 git fetch --tags
 
