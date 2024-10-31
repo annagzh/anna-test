@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Get the most recent git tag and assign it to APP_VERSION
-export APP_VERSION=$(git tag --sort=-creatordate | head -n 1)
+export APP_VERSION=$(git describe --tags --abbrev=0)
 
 # Print the APP_VERSION to verify
 echo "APP_VERSION=$APP_VERSION"
