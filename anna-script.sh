@@ -2,6 +2,7 @@
 
 # Fetch all tags and unshallow the repository
 git fetch --unshallow
+git fetch --tags
 
 # Get the most recent git tag and assign it to APP_VERSION
 export APP_VERSION=$(git tag --sort=-creatordate | head -n 1)
