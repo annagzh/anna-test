@@ -1,13 +1,10 @@
 #!/bin/bash
 
 # Fetch all tags and unshallow the repository
-#git fetch --prune --unshallow
-
-#git fetch -t test
-git clone https://github.com/annagzh/anna-test
+git fetch --unshallow
 
 # Get the most recent git tag and assign it to APP_VERSION
-export APP_VERSION=$(git describe --tags)
+export APP_VERSION=$(git tag --sort=-creatordate | head -n 1)
 
 # Print the APP_VERSION to verify
 echo "APP_VERSION=$APP_VERSION"
