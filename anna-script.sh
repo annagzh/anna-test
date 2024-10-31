@@ -3,7 +3,7 @@
 # Fetch all tags and unshallow the repository
 #git fetch --prune --unshallow
 
-#git fetch -t
+#git fetch -t test
 git clone
 
 # Get the most recent git tag and assign it to APP_VERSION
